@@ -49,8 +49,8 @@
             <groupId>org.springframework.boot</groupId>
         </dependency>
         <dependency>
-            <artifactId>mysql-connector-j</artifactId>
-            <groupId>com.mysql</groupId>
+            <artifactId>postgresql</artifactId>
+            <groupId>org.postgresql</groupId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -58,7 +58,7 @@
             <groupId>org.flywaydb</groupId>
         </dependency>
         <dependency>
-            <artifactId>flyway-mysql</artifactId>
+            <artifactId>flyway-database-postgresql</artifactId>
             <groupId>org.flywaydb</groupId>
         </dependency>
         <dependency>
@@ -77,7 +77,7 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>10.15.0</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true</url>
+                    <url>jdbc:postgresql://localhost:5432/store_api</url>
                     <user>root</user>
                     <password>MyPassword!</password>
                     <cleanDisabled>false</cleanDisabled>
