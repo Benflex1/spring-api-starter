@@ -2,7 +2,7 @@ spring:
   application:
     name: store
   datasource:
-    url: jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://localhost:5432/store_api
     username: root
     password: MyPassword!
   jpa:
